@@ -1,0 +1,954 @@
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar2 = 2
+
+Output: 
+
+FileTable: 
+2 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar2 = 2
+
+Output: 
+
+FileTable: 
+2 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 10
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+b = 11
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+{{Open file: test.txt; Read file from a}; Read file from b}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test.txt; Read file from a}
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test.txt
+Read file from a
+Read file from b
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+Read file from b
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+Read file from b
+
+Symbols Table: 
+a = 15
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+
+Execution Stack: 
+
+Symbols Table: 
+a = 15
+b = 20
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test.txt
+

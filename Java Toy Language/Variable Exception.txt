@@ -1,0 +1,18 @@
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+

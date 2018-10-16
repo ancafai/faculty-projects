@@ -1,0 +1,288 @@
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+
+Execution Stack: 
+if(Evaluate( 0 ) then: {x = 2; print(2+4)}; else: {a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{a = 10; print(a)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+a = 10
+print(a)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+print(a)
+
+Symbols Table: 
+a = 10
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+
+Symbols Table: 
+a = 10
+
+Output: 
+10
+
+FileTable: 
+

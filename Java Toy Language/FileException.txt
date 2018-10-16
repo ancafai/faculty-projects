@@ -1,0 +1,39 @@
+Execution Stack: 
+Read file from a
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Read file from a
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Program 5:
+Execution Stack: 
+Read file from a
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------

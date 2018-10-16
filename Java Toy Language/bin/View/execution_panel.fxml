@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ExecutionPanel">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints maxHeight="315.0" minHeight="10.0" prefHeight="315.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ListView fx:id="programsListView" prefHeight="315.0" prefWidth="145.0" GridPane.rowIndex="1" />
+      <ListView fx:id="executionStackListView" prefHeight="315.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TableView fx:id="symbolsTableView" prefHeight="200.0" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="symbolsTableViewId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="symbolsTableViewName" prefWidth="75.0" text="Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="heapTableView" prefHeight="200.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="heapTableViewAddress" prefWidth="75.0" text="Address" />
+          <TableColumn fx:id="heapTableViewName" prefWidth="75.0" text="Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="fileTableViewId" prefWidth="70.0" text="ID" />
+          <TableColumn fx:id="fileTableViewName" prefWidth="70.0" text="Name" />
+            <TableColumn fx:id="fileTableViewBuffer" prefWidth="110.0" text="Buffered Reader" />
+        </columns>
+      </TableView>
+      <ListView fx:id="outputListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Button fx:id="oneStepButton" mnemonicParsing="false" text="Execute One Step" GridPane.rowIndex="2">
+         <font>
+            <Font name="Open Sans" size="10.0" />
+         </font></Button>
+      <Label text="Programs">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Execution Stack" textAlignment="CENTER" GridPane.columnIndex="1">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Symbols Table" GridPane.columnIndex="2">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Heap" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.columnSpan="3">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" text="File Table" GridPane.columnIndex="4">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label text="Output" GridPane.columnIndex="5">
+         <font>
+            <Font name="Open Sans" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</GridPane>

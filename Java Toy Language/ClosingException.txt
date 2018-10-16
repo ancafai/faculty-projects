@@ -1,0 +1,69 @@
+Execution Stack: 
+{Open file: test2.txt; Close file with id 1}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test2.txt
+Close file with id 1
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Close file with id 1
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test2.txt
+
+Execution Stack: 
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+{Open file: test2.txt; Close file with id 2}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Open file: test2.txt
+Close file with id 2
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Execution Stack: 
+Close file with id 2
+
+Symbols Table: 
+fileVar1 = 1
+
+Output: 
+
+FileTable: 
+1 : test2.txt
+

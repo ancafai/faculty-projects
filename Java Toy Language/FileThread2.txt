@@ -1,0 +1,320 @@
+Program 10:
+Execution Stack: 
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 11:
+Execution Stack: 
+{v = 10; {new(a, 22); {Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}); Fork({print(v); print(ReadHeap(a))})}}}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 11:
+Execution Stack: 
+v = 10
+{new(a, 22); {Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}); Fork({print(v); print(ReadHeap(a))})}}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 11:
+Execution Stack: 
+{new(a, 22); {Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}); Fork({print(v); print(ReadHeap(a))})}}
+
+Symbols Table: 
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 11:
+Execution Stack: 
+new(a, 22)
+{Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}); Fork({print(v); print(ReadHeap(a))})}
+
+Symbols Table: 
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 11:
+Execution Stack: 
+{Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}); Fork({print(v); print(ReadHeap(a))})}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 11:
+Execution Stack: 
+Fork({WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}})
+Fork({print(v); print(ReadHeap(a))})
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 11:
+Execution Stack: 
+Fork({print(v); print(ReadHeap(a))})
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 12:
+Execution Stack: 
+{WriteHeap(a, 30); {v = 32; {print(v); print(ReadHeap(a))}}}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 11:
+Execution Stack: 
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 12:
+Execution Stack: 
+WriteHeap(a, 30)
+{v = 32; {print(v); print(ReadHeap(a))}}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 13:
+Execution Stack: 
+{print(v); print(ReadHeap(a))}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 22
+-------
+Program 12:
+Execution Stack: 
+{v = 32; {print(v); print(ReadHeap(a))}}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 13:
+Execution Stack: 
+print(v)
+print(ReadHeap(a))
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 12:
+Execution Stack: 
+v = 32
+{print(v); print(ReadHeap(a))}
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+10
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 13:
+Execution Stack: 
+print(ReadHeap(a))
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+10
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 12:
+Execution Stack: 
+{print(v); print(ReadHeap(a))}
+
+Symbols Table: 
+a = 1
+v = 32
+
+Output: 
+10
+30
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 13:
+Execution Stack: 
+
+Symbols Table: 
+a = 1
+v = 10
+
+Output: 
+10
+30
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 12:
+Execution Stack: 
+print(v)
+print(ReadHeap(a))
+
+Symbols Table: 
+a = 1
+v = 32
+
+Output: 
+10
+30
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 12:
+Execution Stack: 
+print(ReadHeap(a))
+
+Symbols Table: 
+a = 1
+v = 32
+
+Output: 
+10
+30
+32
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------
+Program 12:
+Execution Stack: 
+
+Symbols Table: 
+a = 1
+v = 32
+
+Output: 
+10
+30
+32
+30
+
+FileTable: 
+
+Heap: 
+1 -> 30
+-------

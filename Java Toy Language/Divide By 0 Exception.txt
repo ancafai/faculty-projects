@@ -1,0 +1,9 @@
+Execution Stack: 
+print(5/0)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+

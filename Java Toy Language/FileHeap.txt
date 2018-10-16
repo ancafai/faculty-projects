@@ -1,0 +1,190 @@
+Program 6:
+Execution Stack: 
+{{{{v = 10; new(v, 20)}; {new(a, 22); WriteHeap(a, 0)}}; {print(a); print(ReadHeap(ab))}}; a = 0}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+{{{v = 10; new(v, 20)}; {new(a, 22); WriteHeap(a, 0)}}; {print(a); print(ReadHeap(ab))}}
+a = 0
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+{{v = 10; new(v, 20)}; {new(a, 22); WriteHeap(a, 0)}}
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+{v = 10; new(v, 20)}
+{new(a, 22); WriteHeap(a, 0)}
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+v = 10
+new(v, 20)
+{new(a, 22); WriteHeap(a, 0)}
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+new(v, 20)
+{new(a, 22); WriteHeap(a, 0)}
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+v = 10
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 6:
+Execution Stack: 
+{new(a, 22); WriteHeap(a, 0)}
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+v = 1
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+-------
+Program 6:
+Execution Stack: 
+new(a, 22)
+WriteHeap(a, 0)
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+v = 1
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+-------
+Program 6:
+Execution Stack: 
+WriteHeap(a, 0)
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+a = 2
+v = 1
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 22
+-------
+Program 6:
+Execution Stack: 
+{print(a); print(ReadHeap(ab))}
+a = 0
+
+Symbols Table: 
+a = 2
+v = 1
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 0
+-------
+Program 6:
+Execution Stack: 
+print(a)
+print(ReadHeap(ab))
+a = 0
+
+Symbols Table: 
+a = 2
+v = 1
+
+Output: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 0
+-------
+Program 6:
+Execution Stack: 
+print(ReadHeap(ab))
+a = 0
+
+Symbols Table: 
+a = 2
+v = 1
+
+Output: 
+2
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 0
+-------

@@ -1,0 +1,359 @@
+Program 7:
+Execution Stack: 
+{{v = 6; while(v-2){print(v); v = v-1}}; print(v)}
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+{v = 6; while(v-2){print(v); v = v-1}}
+print(v)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+v = 6
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 6
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+{print(v); v = v-1}
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 6
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+print(v)
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 6
+
+Output: 
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 6
+
+Output: 
+6
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 5
+
+Output: 
+6
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+{print(v); v = v-1}
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 5
+
+Output: 
+6
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+print(v)
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 5
+
+Output: 
+6
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 5
+
+Output: 
+6
+5
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 4
+
+Output: 
+6
+5
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+{print(v); v = v-1}
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 4
+
+Output: 
+6
+5
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+print(v)
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 4
+
+Output: 
+6
+5
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 4
+
+Output: 
+6
+5
+4
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 3
+
+Output: 
+6
+5
+4
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+{print(v); v = v-1}
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 3
+
+Output: 
+6
+5
+4
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+print(v)
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 3
+
+Output: 
+6
+5
+4
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+v = v-1
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 3
+
+Output: 
+6
+5
+4
+3
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+while(v-2){print(v); v = v-1}
+print(v)
+
+Symbols Table: 
+v = 2
+
+Output: 
+6
+5
+4
+3
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+print(v)
+
+Symbols Table: 
+v = 2
+
+Output: 
+6
+5
+4
+3
+
+FileTable: 
+
+Heap: 
+-------
+Program 7:
+Execution Stack: 
+
+Symbols Table: 
+v = 2
+
+Output: 
+6
+5
+4
+3
+2
+
+FileTable: 
+
+Heap: 
+-------
