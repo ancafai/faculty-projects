@@ -1,0 +1,5 @@
+export enum JobCostType {
+  HOURLY = "HOURLY",
+  SESSION = "SESSION",
+  VOLUNTEERING = "VOLUNTEERING"
+}

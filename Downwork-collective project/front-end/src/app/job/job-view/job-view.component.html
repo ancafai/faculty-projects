@@ -1,0 +1,163 @@
+<div class="wrapper">
+
+  <div class="page-header page-header-small" data-parallax="true"
+       style="background-image: url('../assets/img/fabio-mangione.jpg');">
+  </div>
+  <div class="main">
+    <div class="section">
+      <div class="container">
+
+	  <div class="row">
+	  <div class="air-card col-md-9">
+      <div class="row">
+        <div class="col-md-11">
+		  
+          <h2><span class="label label-primary"> {{job.title}}</span></h2>
+	  
+	  
+	  
+		  <br>
+          <!--<h4 *ngIf="job.type=='voluntary'" class="price"><strong> Voluntary work</strong></h4>-->
+          <!--<h4 class="price" *ngIf="job.costType=='HOURLY'" style="display: inline"><strong> {{job.cost}} </strong></h4><h4 class="price" *ngIf="job.type=='HOURLY'" style="display: inline"><strong> $ /hour</strong></h4>-->
+          <!--<h4  class="price" *ngIf="job.costType=='SESSION'" style="display: inline"><strong> {{job.cost}} </strong></h4><h4  class="price" *ngIf="job.type=='SESSION'" style="display: inline"><strong>$ </strong></h4>-->
+          <!--<hr>-->
+		<div class="row">
+		
+		 <div class="pull-left m-d-left">
+		  <i class="material-icons m-a-left">date_range</i>
+		  </div>
+		  <div class="pull-left m-b-left">
+		  <h4 class="price" style="display: inline"><strong>StartDate:</strong> {{job.startDate}}</h4> <br>
+		  <h4 class="price" style="display: inline"><strong>EndDate:</strong> {{job.endDate}}</h4><br>
+		  <h4 class="price" style="display: inline"><strong>Occurrence: </strong>{{job.occurrence}}</h4>
+		  
+		  
+		  </div>
+		  
+		  <div class="pull-left">
+		  <i class="material-icons m-c-left">credit_card</i>
+		  </div>
+		  <div class="pull-left m-b-left">
+		  <h4 class="price"style="display: inline" ><strong> {{job.cost}} $</strong></h4>
+		  <h4 class="price" style="display: block"> {{job.costType}}</h4>
+		  </div>
+		  
+		  <div class="pull-left">
+		  <i class="material-icons m-c-left">room</i>
+		  </div>
+		  <div class="pull-left m-b-left">
+          <h4  class="price " style="display: inline"> <strong> Location: </strong>{{job.location}}</h4>
+          </div>
+		   </div>
+		   <br><br>
+		   
+		   <div class="row m-b-left">
+		    <div class="pull-left">
+		   <i class="material-icons">alarm_on</i>
+		   </div>
+		   <div class="pull-left m-b-left">
+		   <h4 class="price" style="display: inline"><strong>StartTime:</strong> {{job.startTime}}</h4> <br>
+		   <h4 class="price" style="display: inline"><strong>EndTime:</strong> {{job.endTime}}</h4><br>
+		   </div>
+		   </div>
+		   
+		   <br><br>
+		  <h2 class="center m-b-left"> Details </h2>
+		  <hr><br>
+		  <div class="row">
+		   <div class="pull-left ">
+		   <i class="material-icons m-a-left" >description</i>
+		   <h4 class="price m-b-left" style="display:inline"><strong>Description of job:</strong></h4>
+		   </div>  
+		   <br><br><br>
+		   <div class="m-b-left">
+		   
+		   <p class="m-a-left description" *ngIf="job.description == null" > There is no description for this job yet. </p>
+		   <p class="price m-a-left" *ngIf=" job.description != null && job.description.length < 170"> {{job.description}} </p>
+		   <p class="m-a-left" *ngIf="job.description != null &&  job.description.length >= 170"> {{descrTruncated}} <a href="#" onclick="return false;" (click)="showMore()">{{viewDescription}} </a></p>
+		   
+		   </div>
+			</div>
+		   <br> 
+		   
+		  </div>
+		  
+		    
+		  
+		   
+		  
+
+          <!--<hr>-->
+          <!--<div class="row">-->
+          <!--<div class="col-md-7 offset-md-5 col-sm-8">-->
+          <!--<button class="btn btn-danger btn-block btn-round">Apply &nbsp;<i class="fa fa-chevron-right"></i></button>-->
+          <!--</div>-->
+          <!--</div>-->
+        </div>
+      </div>
+	 
+	 <div class="col-md-3">
+		<h4><span class="label label-primary">About the employer</span> </h4>
+		<h5>Name: </h5>
+		
+	  </div>
+		</div>
+		 
+	  </div>
+        <div class="row">
+          <div class="col-md-9 col-sm-6">
+            <h2 class="center"> {{job.title}}</h2>
+            <!--<h4 *ngIf="job.type=='voluntary'" class="price"><strong> Voluntary work</strong></h4>-->
+            <!--<h4 class="price" *ngIf="job.costType=='HOURLY'" style="display: inline"><strong> {{job.cost}} </strong></h4><h4 class="price" *ngIf="job.type=='HOURLY'" style="display: inline"><strong> $ /hour</strong></h4>-->
+            <!--<h4  class="price" *ngIf="job.costType=='SESSION'" style="display: inline"><strong> {{job.cost}} </strong></h4><h4  class="price" *ngIf="job.type=='SESSION'" style="display: inline"><strong>$ </strong></h4>-->
+            <!--<hr>-->
+            <h4 class="price" style="display: inline"><strong> Cost: </strong></h4><h4 class="price"
+                                                                                       style="display: inline"><strong>
+            {{job.cost}} </strong></h4>
+            <hr>
+            <h4 class="price" style="display: inline"><strong> Cost type: </strong></h4><h4 class="price"
+                                                                                            style="display: inline">
+            <strong> {{job.costType}} </strong></h4>
+            <hr>
+            <h4 class="price" style="display: inline"><strong> Start Date: </strong></h4><h4 class="price"
+                                                                                             style="display: inline">
+            <strong> {{job.startDate}} </strong></h4>
+            <!--<h4  class="price" style="display: inline"><strong> Start Time:  </strong></h4><h4  class="price" style="display: inline"><strong> {{job.startTime}} </strong></h4>-->
+            <br>
+            <h4 class="price" style="display: inline"><strong> End Date: </strong></h4><h4 class="price"
+                                                                                           style="display: inline">
+            <strong> {{job.endDate}} </strong></h4>
+            <!--<h4  class="price" style="display: inline"><strong> End Time:  </strong></h4><h4  class="price" style="display: inline"><strong> {{job.endTime}} </strong></h4>-->
+            <hr>
+            <h4 class="price" style="display: inline"><strong> Location: </strong></h4><h4 class="price"
+                                                                                           style="display: inline">
+            <strong> {{job.location}} </strong></h4>
+            <hr>
+            <!--<p>{{job.description}}</p>-->
+            <!--<span class="label label-default shipping">Free shipping to Europe </span>-->
+            <h4 class="price" style="display: inline"><strong> Occurrence: </strong></h4><h4 class="price"
+                                                                                             style="display: inline">
+            <strong> {{job.occurrence}} </strong></h4>
+            <hr>
+            <div class="row">
+            </div>
+            <!--<hr>-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-7 offset-md-5 col-sm-8">-->
+            <!---->
+            <!--</div>-->
+            <!--</div>-->
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-danger btn-move-right btn-round"
+                    *ngIf="app.localStorageItem('username') && app.localStorageItem('username') !== job.owner"
+                    (click)="apply()">Apply <i class="nc-icon nc-minimal-right"></i> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

@@ -1,0 +1,98 @@
+<div class="wrapper profile">
+  <div class="page-header page-header-small" data-parallax="true" style="background-image: url('../assets/img/fabio-mangione.jpg');">
+  </div>
+  <div class="profile-content section">
+    <div class="container">
+      <div class="row">
+        <div class="profile-picture">
+          <div class="fileinput fileinput-new" data-provides="fileinput">
+            <div class="fileinput-new img-no-padding">
+              <img [src]="photo" alt="...">
+            </div>
+            <div class="name">
+              <h4 class="title text-center">{{person.username}}<br><small>{{person.firstname}} {{person.lastname}}</small></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto text-center">
+          <p>{{person.description}} </p>
+          <br>
+          <a class="btn btn-outline-default btn-round" [routerLink]="['../edit', app.localStorageItem('username')]"><i class="fa fa-cog"></i> Edit</a>
+        </div>
+      </div>
+      <br>
+      <div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#jobs-taken" role="tab">Jobs Taken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#jobs-posted" role="tab">Jobs Posted</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active text-center" id="jobs-taken" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">
+              <h3 class="text-muted">No jobs taken yet :(</h3>
+              <button class="btn btn-warning btn-round" >Take jobs</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane text-center" id="jobs-posted" role="tabpanel">
+		
+          <button class="btn btn-warning btn-round" [routerLink]="['/job/create']">Post jobs</button>
+        
+         <div class="row" *ngFor="let row of jobs"> 
+          <mat-card *ngFor="let column of row " class="job-card">
+            <mat-card-header>
+              <div mat-card-avatar [ngStyle]="{
+                  'background-image': 'url(data:image/jpg;base64,' + app.localStorageItem('picture') + ')',
+                  'background-size': 'cover'}"></div>
+              <mat-card-title>{{column.title}}</mat-card-title>
+              <mat-card-subtitle>{{column.status}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../assets/img/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{column.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color="primary"  (click)="seeDetails(column.id)">View details</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+		<div class="row">
+		
+				<ul class="pagination">
+
+				  <li><a (click)="turnPage()">&laquo;</a></li>
+
+				  <li><a (click)="turnPage(1)">1</a></li>
+
+				  <li><a (click)="turnPage(2)">2</a></li>
+
+				  <li><a (click)="turnPage(3)">3</a></li>
+
+				  <li><a (click)="turnPage()">&raquo;</a></li>
+
+				</ul>
+		</div>
+		
+			</div>
+			
+
+	
+		</div>
+      </div>
+	 
+    </div>
+  </div>
+

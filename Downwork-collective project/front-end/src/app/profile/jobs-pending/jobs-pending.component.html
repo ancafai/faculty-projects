@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="main">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 ml-auto mr-auto text-center">
+            <h2 class="discover-title"><small>Pending jobs</small></h2>
+          </div>
+        </div>
+        <mat-card *ngFor="let pendingJob of jobs" class="job-card">
+          <mat-card-header>
+            <mat-card-title>{{pendingJob.title}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              {{pendingJob.description}}
+            </p>
+            <button type="button" class="btn btn-wd btn-info btn-round" (click)="acceptJob(pendingJob.id)">Accept job!</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

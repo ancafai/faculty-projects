@@ -1,0 +1,208 @@
+<div class="wrapper">
+  <div class="main">
+    <div class="section">
+      <div class="container">
+
+        <div class="col-md-12">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Post a job</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--<h3>Describe the job you want to add</h3>-->
+              <form>
+                <div class="row">
+                  <div class="col-md-7 col-sm-7">
+                    <div class="form-group">
+                      <h2>Choose a category for your job <span class="icon-danger">*</span></h2>
+                      <div ngbDropdown class="d-inline-block dropdown long-dropdown">
+                        <button name="jobType" #jobType="ngModel" [(ngModel)]="job.jobType"
+                                class="btn btn-danger btn-outline-danger long-dropdown-btn"
+                                id="type-dropdown" ngbDropdownToggle>{{selectedJobType}}
+                        </button>
+                        <div ngbDropdownMenu aria-labelledby="type-dropdown" class="dropdown-danger">
+                          <button class="dropdown-item" *ngFor="let jobType of jobTypes"
+                                  (click)="changeJobType(jobType)">
+                            {{jobType}}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>What is this post? <span class="icon-danger">*</span></h2>
+                    <div class="form-check-radio">
+                      <label class="form-check-label">
+                        <input class="form-check-input" name="isOffer" [(ngModel)]="job.isOffer" [value]="true"
+                               type="radio"
+                        >
+                        This is a job offer so I want to hire people through it
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                    <div class="form-check-radio">
+                      <label class="form-check-label">
+                        <input class="form-check-input" name="isOffer" [(ngModel)]="job.isOffer" [value]="false"
+                               type="radio"
+                        >
+                        This is a service I provide such that people could make use of me and my abilities
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <h1>Describe your post</h1>
+                    <div class="form-group">
+                      <h2>Title <span class="icon-danger">*</span></h2>
+                      <input class="form-control border-input" type="text" name="title"
+                             [(ngModel)]="job.title" #title="ngModel">
+                    </div>
+                    <div class="form-group">
+                      <h2>Description <span class="counter" [class.icon-danger]="(255-job.description.length) === 0">{{255 - job.description.length}} Characters left</span>
+                      </h2>
+                      <textarea name="description" class="form-control" rows="8" [(ngModel)]="job.description"
+                                placeholder="Write a short description of the job" maxlength="255"></textarea>
+                    </div>
+                    <h2>Where do you want your post to be featured? <span class="icon-danger">*</span></h2>
+                    <div ngbDropdown class="d-inline-block dropdown long-dropdown">
+                      <button name="location" #location="ngModel" [(ngModel)]="job.location"
+                              class="btn btn-danger btn-outline-danger long-dropdown-btn"
+                              id="location-droFpdown" ngbDropdownToggle>{{selectedCity}}
+                      </button>
+                      <div ngbDropdownMenu aria-labelledby="location-dropdown" class="dropdown-danger">
+                        <button class="dropdown-item" *ngFor="let city of cities" (click)="changeCity(city)">{{city}}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <h1>Payment and Availability</h1>
+                    <h2>How often would you like the job to occur?</h2>
+                    <div class="row occurrence-row">
+                      <div class="col-md-4 occurrence-box" [class.active]="selectedOccurrence === 'ONCE'"
+                           (click)="changeOccurrence('ONCE')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-time-alarm"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Once </h4>
+                            <p>This job takes place only once (e.g. baby sitting on a Saturday)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 occurrence-box" [class.active]="selectedOccurrence === 'WEEKLY'"
+                           (click)="changeOccurrence('WEEKLY')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-time-alarm"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Weekly </h4>
+                            <p>This job takes place on a weekly basis (not more than a month though)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 occurrence-box" [class.active]="selectedOccurrence === 'MONTHLY'"
+                           (click)="changeOccurrence('MONTHLY')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-time-alarm"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Monthly </h4>
+                            <p>This job takes place on a monthly basis</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>How would you like to pay/get paid?</h2>
+                    <div class="row occurrence-row">
+                      <div class="col-md-4 occurrence-box cost-type-box"
+                           [class.active]="selectedJobCostType === 'HOURLY'" (click)="changeJobCostType('HOURLY')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Hourly </h4>
+                            <p>You'll pay/get paid by the hour and at the end of the day you will be compensated</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 occurrence-box cost-type-box"
+                           [class.active]="selectedJobCostType === 'SESSION'" (click)="changeJobCostType('SESSION')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Session </h4>
+                            <p>You'll pay/get paid at the end of your job/service</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 occurrence-box cost-type-box"
+                           [class.active]="selectedJobCostType === 'VOLUNTEERING'"
+                           (click)="changeJobCostType('VOLUNTEERING')">
+                        <div class="info">
+                          <div class="icon">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </div>
+                          <div class="description">
+                            <h4 class="info-title"> Volunteering </h4>
+                            <p>You'll not receive any monetary gain because you rock!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>Payment <span class="icon-danger">*</span></h2>
+                    <div class="input-group border-input payment">
+                      <input value="" class="form-control border-input" type="text" name="money"
+                             [(ngModel)]="job.cost" #money="ngModel">
+                      <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row inline-column-row">
+                  <div class="col-md-6">
+                    <h2>Start Date <span class="icon-danger">*</span></h2>
+                    <div class="input-group border-input">
+                      <input value="" class="form-control border-input" type="date" name="startDate"
+                             [ngModel]="job.startDate | date:'yyyy-MM-dd'" (ngModelChange)="job.startDate = $event"
+                             #startDate="ngModel">
+                      <span class="input-group-addon"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h2>End Date <span class="icon-danger">*</span></h2>
+                    <div class="input-group border-input">
+                      <input value="" class="form-control border-input" type="date" name="endDate"
+                             [ngModel]="job.endDate | date:'yyyy-MM-dd'" (ngModelChange)="job.endDate = $event"
+                             #endDate="ngModel">
+                      <span class="input-group-addon"></span>
+                    </div>
+                  </div>
+                </div>
+                <mat-card-footer>
+                  <div class="row inline-column-row">
+                    <div class="col-md-3 col-sm-3 ml-auto">
+                      <button class="btn btn-outline-danger btn-block btn-round">Cancel</button>
+                    </div>
+                    <div class="col-md-3 col-sm-3 mr-auto">
+                      <button class="btn btn-primary btn-block btn-round" (click)="createJob($event)">Save &amp; Publish
+                      </button>
+                    </div>
+                  </div>
+                </mat-card-footer>
+              </form>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

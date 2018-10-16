@@ -1,0 +1,207 @@
+<div class="wrapper">
+
+  <div class="page-header page-header-small" data-parallax="true" style="background-image: url('../assets/img/fabio-mangione.jpg');">
+  </div>
+  <div class="main">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <mat-accordion multi="true">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Job Category
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" name="jobType" [(ngModel)]="type" value="All"
+                           type="radio"
+                           >
+                    {{type}}
+                    All ({{totalNumberOfJobs}})
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check-radio" *ngFor="let jobType of jobTypes">
+                  <label class="form-check-label">
+                    <input class="form-check-input" name="jobType" [(ngModel)]="type" value="{{jobType.name}}"
+                           type="radio">
+                    {{jobType.name}} ({{jobType.jobs.length}})
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Job Location
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div ngbDropdown class="d-inline-block dropdown">
+                  <a class="btn btn-round" id="cities-dropdown-button" ngbDropdownToggle>{{location}}</a>
+                  <div ngbDropdownMenu id="cities-dropdown-menu" aria-labelledby="cities-dropdown-button"
+                       class="dropdown-default">
+                    <a class="dropdown-item" *ngFor="let city of cities" (click)="changeCity(city)">{{city}}</a>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Job Cost Type
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" name="jobCostType" [(ngModel)]="cost_type" [value]="All"
+                           type="radio">
+                    All
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check-radio" *ngFor="let jobCostType of jobCostTypes">
+                  <label class="form-check-label">
+                    <input class="form-check-input" name="jobCostType" [(ngModel)]="cost_type" value="{{jobCostType}}"
+                           type="radio">
+                    {{jobCostType}}
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Period of time
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                  <ngb-timepicker [(ngModel)]="startTime" [spinners]="spinners"></ngb-timepicker>
+                  <ngb-timepicker [(ngModel)]="endTime" [spinners]="spinners"></ngb-timepicker>
+                  <button class="btn btn-round btn-outline-default" (click)="filterTime()">Filter by time</button>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Job availability
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="input-group date">
+                <input class="form-control" matInput [min]="minDate" [matDatepicker]="picker" [(ngModel)]="available_until"
+                       placeholder="Choose a date">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    </span>
+                </span>
+                </div>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="col-md-9">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>See latest job offers</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="row" *ngFor="let job of jobs">
+                  <div class="job">
+                    <h5 class="label label-danger">
+                      {{job.jobType}}
+                    </h5>
+                    <h2>
+                      <a href="#">{{job.title}}</a>
+                    </h2>
+                   <p class="description" *ngIf="job.description != null && job.description.length < 170"> {{job.description}}</p>
+					<p class="description" *ngIf="job.description != null && job.description.length >= 170"> {{job.description.slice(0, 170)}}...</p>
+					
+                    <button type="button" class="btn btn-outline-default btn-round" (click)="seeDetails(job.id)">View
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </mat-card-content>
+              <mat-card-footer>
+                <div class="row">
+                  <ul class="pagination">
+                    <li class="page-item" *ngIf="!isFirstPage">
+                      <a class="page-link" (click)="goToPreviousPage()">Previous</a>
+                    </li>
+                    <li *ngFor="let page of pages"
+                        class="page-item"
+                        [class.active]="pageNumber === page - 1">
+                      <a class="page-link" (click)="goToPage(page)">{{page}}</a>
+                    </li>
+                    <li class="page-item" *ngIf="!isLastPage">
+                      <a class="page-link" (click)="goToNextPage()">Next</a>
+                    </li>
+                  </ul>
+                </div>
+              </mat-card-footer>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<div class="wrapper profile">-->
+  <!--<div class="page-header page-header-small" data-parallax="true" style="background-image: url('../assets/img/fabio-mangione.jpg');">-->
+  <!--</div>-->
+  <!--<div class="profile-content section">-->
+    <!--<div class="container">-->
+      <!--<mat-card>-->
+        <!--<mat-card-header>-->
+          <!--<mat-card-title>See latest job offers</mat-card-title>-->
+        <!--</mat-card-header>-->
+        <!--<mat-card-content>-->
+          <!--<div class="row" *ngFor="let job of jobs">-->
+            <!--<div class="job">-->
+              <!--<h5 class="label label-danger">-->
+                <!--{{job.jobType}}-->
+              <!--</h5>-->
+              <!--<h2>-->
+                <!--<a href="#">{{job.title}}</a>-->
+              <!--</h2>-->
+              <!--<p>-->
+                <!--{{job.description}}-->
+              <!--</p>-->
+              <!--<button type="button" class="btn btn-outline-default btn-round" (click)="seeDetails(job.id)">View-->
+                <!--Details-->
+              <!--</button>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</mat-card-content>-->
+        <!--<mat-card-footer>-->
+          <!--<div class="row">-->
+            <!--<ul class="pagination">-->
+              <!--<li class="page-item" *ngIf="!isFirstPage">-->
+                <!--<a class="page-link" (click)="goToPreviousPage()">Previous</a>-->
+              <!--</li>-->
+              <!--<li *ngFor="let page of pages"-->
+                  <!--class="page-item"-->
+                  <!--[class.active]="pageNumber === page - 1">-->
+                <!--<a class="page-link" (click)="goToPage(page)">{{page}}</a>-->
+              <!--</li>-->
+              <!--<li class="page-item" *ngIf="!isLastPage">-->
+                <!--<a class="page-link" (click)="goToNextPage()">Next</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        <!--</mat-card-footer>-->
+      <!--</mat-card>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+

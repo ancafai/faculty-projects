@@ -1,0 +1,25 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                  <li>
+                    <a [routerLink]="['/profile', app.localStorageItem('username')]">
+                      Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/home']">
+                      Home
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright">
+                    © {{test | date: 'yyyy'}}, made by downWork team
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
